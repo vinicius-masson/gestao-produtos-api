@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Tests/">
+    <Project Path="../tests/Gestao.Produtos.Tests/Gestao.Produtos.Tests.csproj" Id="997e71ed-4834-4396-9f6f-6ab495247566" />
+  </Folder>
+  <Project Path="Gestao.Produtos.API/Gestao.Produtos.API.csproj" />
+  <Project Path="Gestao.Produtos.Application/Gestao.Produtos.Application.csproj" Id="2ebccad3-1169-476c-b8e3-f416148db9cb" />
+  <Project Path="Gestao.Produtos.Crosscutting/Gestao.Produtos.Crosscutting.csproj" Id="290b02be-fbd4-4727-86aa-cc96539d9498" />
+  <Project Path="Gestao.Produtos.Domain/Gestao.Produtos.Domain.csproj" Id="322187f2-ec1f-4dc0-a6e5-d097c1812e79" />
+  <Project Path="Gestao.Produtos.Infrastructure/Gestao.Produtos.Infrastructure.csproj" Id="a486ada8-2362-4f9a-a36a-1bf5fd5f76bb" />
+</Solution>
