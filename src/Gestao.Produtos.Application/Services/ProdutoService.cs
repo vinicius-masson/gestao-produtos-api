@@ -39,10 +39,13 @@ namespace Gestao.Produtos.Application.Services
 
                 if (produto != null)
                 {
-                    response.DataInclusao = produto.DataInclusaoRegistro.ToShortDateString();
+                    response.DataValidade = produto.DataValidade.GetValueOrDefault().ToString(); //.GetValueOrDefault().ToShortDateString();
                     response.Nome = produto.Nome;
                     response.Tipo = produto.Tipo.ToString();
                     response.Marca = produto?.Marca?.Nome;
+                    response.MarcaId = produto.MarcaId;
+                    response.TipoId = (int)produto.Tipo;
+                    response.Id = produto.Id;
                 }
 
                 return response;
@@ -66,10 +69,13 @@ namespace Gestao.Produtos.Application.Services
                     {
                         response.Add(new ProductResponse()
                         {
-                            DataInclusao = produto.DataInclusaoRegistro.ToShortDateString(),
                             Nome = produto.Nome,
                             Tipo = produto.Tipo.ToString(),
                             Marca = produto.Marca.Nome,
+                            MarcaId = produto.MarcaId,
+                            TipoId = (int)produto.Tipo,
+                            DataValidade = produto.DataValidade.GetValueOrDefault().ToShortDateString(),
+                            Id = produto.Id,
                         });
                     }
                 }

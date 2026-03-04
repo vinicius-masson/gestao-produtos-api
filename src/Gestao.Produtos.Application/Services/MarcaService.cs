@@ -23,6 +23,7 @@ namespace Gestao.Produtos.Application.Services
                     {
                         response.Add(new MarcaResponse()
                         {
+                            Id = marca.Id,
                             DataInclusao = marca.DataInclusaoRegistro.ToShortDateString(),
                             Nome = marca.Nome
                         });

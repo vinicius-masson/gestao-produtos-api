@@ -18,7 +18,6 @@ namespace Gestao.Produtos.Application.Profiles
             CreateMap<Produto, ProductResponse>()
                 .ForMember(dest => dest.Tipo, opt => opt.MapFrom(src => src.Tipo.ToString()))
                 .ForMember(dest => dest.Marca, opt => opt.MapFrom(src => src.Marca.Nome))
-                .ForMember(dest => dest.DataInclusao, opt => opt.MapFrom(src => src.DataInclusaoRegistro.ToShortDateString()))
                 .ForMember(dest => dest.DataValidade, opt => opt.MapFrom(src => src.DataValidade.GetValueOrDefault().ToShortDateString()));
         }
     }
