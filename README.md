@@ -1,4 +1,6 @@
-Teste Técnico Techifin - gestão de Produtos
+## Teste Técnico Techfin - Sistema de Gestão de Produtos
+
+Teste técnico de construção de uma API .NET e uma aplicação angular para consumir a API.
 
 🚀 Como executar o projeto
 
